@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2">
+        <rdfs:comment>Онтология отношений Леди Баг и Супер Кот</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related"/>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#hasKwami -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#hasKwami">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isKwami"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#hasOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isOwner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isKwami -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isKwami">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#isOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Related"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Villain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Villain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Adrien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Adrien">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Alya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Alya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Carapace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Carapace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Catnoir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Catnoir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Foo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Foo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Gabrielle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Gabrielle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hawkmoth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hawkmoth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Villain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kaalki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kaalki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kagami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kagami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#LadyWiFi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#LadyWiFi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Villain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Ladybug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Ladybug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Marinette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Marinette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Maura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Maura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Villain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Natalie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Natalie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Nino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Nino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Person"/>
+        <untitled-ontology-2:hasKwami rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Wayzz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Plagg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Plagg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Rena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Rena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Sass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Sass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Tikki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Tikki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+        <untitled-ontology-2:hasOwner rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Ladybug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Trixx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Trixx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+        <untitled-ontology-2:hasOwner rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Alya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Wayzz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Wayzz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Kwami"/>
+        <untitled-ontology-2:hasOwner rdf:resource="http://www.semanticweb.org/malikaagadilova/ontologies/2023/8/untitled-ontology-2#Nino"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
